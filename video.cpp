@@ -15,7 +15,7 @@ Video::Video (string title, string url, string comment, float length, int rating
 
 void Video::print(){
     cout << m_title << ", " << m_url << ", " << m_comment << ", " << m_length << ", ";
-    for (int r = 1; r < m_rating; r ++){
+    for (int r = m_rating; r >0; r--){
         cout << "*";
     }
     cout << endl;
